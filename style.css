@@ -68,13 +68,6 @@ svg{
     display: none;
 }
 
-/* .hamburger i{
-    width: fit-content;
-    height: auto;
-    color: white;
-    fill: none;
-} */
-
 .sitelinkBox{
     width: fit-content;
     height: auto;
@@ -385,6 +378,65 @@ border-radius: 360px;
     color: #00334C;
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+
+.sponsors{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem 7.2rem;
+    row-gap: 1rem;
+    background-color:#F7FFFD ;
+}
+
+.sponsorTitle{
+    width: fit-content;
+    height: auto;
+}
+
+.sponsorTitle h1{
+    background-color: #001913;
+    padding: 1rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+    color: #E4F7F2;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: auto;
+    animation: slide 15s infinite;
+}
+
+.slide{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.sponsor {
+    width: 23%;
+   height: auto;
+}
+
+.sponsor img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
 }
 
 .footer{
@@ -1799,5 +1851,27 @@ color: red;
         flex-wrap: wrap;
     } 
 
- 
+    .sponsors{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 2rem 7.2rem;
+        row-gap: 1rem;
+        background-color:#F7FFFD ;
+    }
+    .sponsor {
+        width: 80%;
+    
+    }
+
+    .sponsor img{
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+    
+    .slide{background-color: green;}
 }
