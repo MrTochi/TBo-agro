@@ -235,20 +235,7 @@ svg{
     align-items: stretch;
 }
 
-.aboutUsText{
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    background-color:#F7FFFD ;
-    padding: 1rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    flex: 1;
-    row-gap: 1rem;
-}
+
 
 .aboutUsImage{
     width: 50%;
@@ -297,6 +284,255 @@ svg{
     background-color: #E4F7F2;
 }
 
+.services{
+    width: 100%;
+    height: auto;
+    padding: 2rem 7.2rem;
+    background-color:#ffffff ;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+
+.servicesTitle{
+width: fit-content;
+height: auto;
+}
+
+.servicesTitle h1{
+    background-color: #001913;
+    padding: 1rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+    color: #E4F7F2;
+    font-size: 1.6rem;
+    font-weight: 500; 
+}
+
+.serviceBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    row-gap: 3rem;
+}
+
+.service1ButTextImg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: stretch;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.service1TextButton{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    row-gap: 0.5rem;
+    flex: 1.1;
+}
+
+.service1Texts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+}
+
+.service1Texts h1{
+    color: #003326;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.service1Texts p{
+    color: #003326;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.service1TextButton button{
+    padding: 1rem;
+    background-color: #001913;
+    color: #F7FFFD;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border-radius:0.5rem ;
+}
+
+.service1img{
+    width: 50%;
+    height: auto;
+    display: flex;
+    background-image: url(./agroservice.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    flex: 0.9;
+}
+
+
+.service2TextButImg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: stretch;
+    column-gap: 1rem;
+
+}
+
+.service2TextButton{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    row-gap: 0.5rem;
+    flex: 1.1;
+}
+
+.service2Texts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+}
+
+.service2Texts h1{
+    color: #003326;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.service2Texts p{
+    color: #003326;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.service2TextButton button{
+    padding: 1rem;
+    background-color: #001913;
+    color: #F7FFFD;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border-radius:0.5rem ;
+}
+
+.service2Img{
+    width: 50%;
+    height: auto;
+    display: flex;
+    background-image: url(./farmservice.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    flex: 0.9;
+}
+
+.service3TextButImg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: stretch;
+    column-gap: 1rem;
+
+}
+
+.service3Texts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+}
+
+.service3Texts h1{
+    color: #003326;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.service3Texts P{
+    color: #003326;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.service3TextButton{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    row-gap: 0.5rem;
+    flex: 1.1;
+}
+
+.service3TextButton button{
+    padding: 1rem;
+    background-color: #001913;
+    color: #F7FFFD;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border-radius:0.5rem ;
+}
+
+.service3image{
+    width: 50%;
+    height: auto;
+    display: flex;
+    background-image: url(./insurance.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    flex: 0.9;
+}
 .testimonials{
     width: 100%;
     height: auto;
@@ -311,6 +547,7 @@ svg{
 .testimonalTitle{
 width: fit-content;
 height: auto;
+
 }
 
 .testimonalTitle h1{
@@ -390,7 +627,7 @@ border-radius: 360px;
     align-items: center;
     padding: 2rem 7.2rem;
     row-gap: 1rem;
-    background-color:#F7FFFD ;
+    background-color:#E4F7F2 ;
 }
 
 .sponsorTitle{
@@ -416,6 +653,7 @@ border-radius: 360px;
 
 .slide{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -519,6 +757,184 @@ color: red;
     font-weight: 400;
     text-wrap: nowrap;
     cursor: pointer;
+}
+
+/* ABOUT-US */
+.aboutUsbox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+   
+}
+.aboutusImage{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./about.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 7.2rem;
+}
+
+.aboutusImageTitle{
+    color: #F7FFFD;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.aboutUsText{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    padding: 1rem 7.2rem;
+}
+
+.aboutusThrees{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1rem 7.2rem;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+.containerA,.containerB,.containerC{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid #001913;
+    padding: 1rem;
+    row-gap: 0.5rem;
+    border-radius: 0.5rem;
+    flex: 1;
+
+}
+
+.containerA h4{
+    color: #003326;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.containerB h4{
+    color: #003326;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.containerC h4{
+    color: #003326;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.containerA P,.containerB P,.containerC p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color:#001913;
+}
+
+.achievements{
+    width: 100%;
+    height: auto;
+    padding: 1rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.achievementTitle{
+    width: fit-content;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.achievementTitle h1{
+    background-color: #001913;
+    padding: 1rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+    color: #E4F7F2;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.awardBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+
+}
+
+.award1,.award2{
+    width: 46%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    border: 2px solid #001913;
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    
+
+}
+
+.awardText{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+  
+}
+
+.awardText h4{
+    color: #003326;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.awardText p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color:#001913;
+}
+
+.awardImage{
+    width: 50%;
+    height: auto;
+  
+}
+
+.awardImage img{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -1592,6 +2008,30 @@ color: red;
         flex-wrap: wrap;
     } 
 
+    
+    .sponsor {
+        width: 40%; /* Increase sponsor width on mobile devices */
+        margin-bottom: 0.5rem; /* Add some space between items */
+    }
+
+    .sponsors {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .slide {
+        justify-content: center; /* Center items on small screens */
+        column-gap: 1rem;
+    }
+   
+    .sponsorTitle h1{
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
 
 }
 
@@ -1786,6 +2226,22 @@ color: red;
         font-weight: 400;
     }
     
+
+    .services{
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem;
+        background-color:#ffffff ;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        row-gap: 2rem;
+    }
+    
+    
+   
+
    
     .testimonials{
         width: 100%;
@@ -1851,27 +2307,26 @@ color: red;
         flex-wrap: wrap;
     } 
 
-    .sponsors{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        padding: 2rem 7.2rem;
-        row-gap: 1rem;
-        background-color:#F7FFFD ;
-    }
     .sponsor {
-        width: 80%;
-    
+        width: 40%; /* Increase sponsor width on mobile devices */
+        margin-bottom: 0.5rem; /* Add some space between items */
     }
 
-    .sponsor img{
-        width: 100%;
-        height: auto;
-        border-radius: 0.5rem;
+    .sponsors {
+        padding: 1rem; /* Adjust padding for smaller screens */
     }
-    
-    .slide{background-color: green;}
+
+    .slide {
+        justify-content: center; /* Center items on small screens */
+        column-gap: 1rem;
+    }
+   
+    .sponsorTitle h1{
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 }
