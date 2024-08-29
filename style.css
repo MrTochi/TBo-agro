@@ -3222,10 +3222,11 @@ color: #AEE01F;
         justify-content: center;
         align-items: center;
         background-color: #F7FFFD;
-     
-    
     }
 
+    .containerA h4,.containerB h4,.containerC h4{
+        text-wrap: nowrap;
+    }
 
     .achievements{
         width: 100%;
