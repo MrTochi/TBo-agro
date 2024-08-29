@@ -7,6 +7,54 @@
     font-family: "Poppins", sans-serif;
 }
 
+.overlayBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    row-gap: 1rem;
+    padding: 2rem;
+    visibility: hidden;
+}
+
+.cancelIcon{
+    width: fit-content;
+    height: auto;
+}
+
+.cancelIcon i{
+color:#ffffff ;
+font-size: 1.6rem;
+}
+
+.textlink{
+width: fit-content;
+height: auto;
+display: flex;
+flex-direction: column;
+row-gap: 1rem;
+}
+
+.textlink p{
+    color:#AEE01F;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    text-wrap: nowrap;
+    text-align: end;
+}
+
+
+
 a{
     text-decoration: none;
     cursor: pointer;
@@ -193,14 +241,14 @@ svg{
     cursor: pointer;
     border-radius:0.5rem ;
 }
-.aboutUs{
+
+.ourcompany{
     width: 100%;
     height: auto;
     padding: 2rem 7.2rem;
-    background-color:#001913 ;
 }
 
-.aboutusBox{
+.ourcompanyBox{
     width: 100%;
     height: auto;
     display: flex;
@@ -211,33 +259,71 @@ svg{
     
 }
 
-.aboutusTitlte{
+.ourcompanyTitlte{
     width: fit-content;
     height: auto;
 }
 
-.aboutusTitlte h1{
-    background-color: #F7FFFD;
+.ourcompanyTitlte h1{
+    background-color: #001913;
     padding: 1rem;
     border-radius: 0.5rem 0 0.5rem 0;
-    color: #001913;
+    color: #E4F7F2;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 500; 
     
 }
 
-.aboutusOthers{
+.ourcompanyOthers{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: stretch;
+    margin-top: 1rem;
+    column-gap: 1rem;
 }
 
+.ourcompanyDescription{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: start;
+    align-items: start;
+    flex: 1;
+}
 
+.ourcompanyDescription p{
+    color: #003326;
+    font-size: 0.8rem;
+    font-weight: 400; 
+}
 
-.aboutUsImage{
+.ourcompanyDescription button{
+    padding: 1rem;
+    background-color: #001913;
+    color: #F7FFFD;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border-radius:0.5rem ;
+}
+
+.ourcompanyDescription button:hover{
+    transition: all 1s;
+    background-color: #B8E5DA;
+    color: #001913;
+}
+
+.ourcompanyImage{
     width: 50%;
     height: auto;
     display: flex;
@@ -251,38 +337,10 @@ svg{
 }
 
 
-.ourstoryBox,.coreValues,.vision,.mission{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    row-gap: 0.5rem;
-}
-
-.ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
-    background-color: #001913;
-    padding: 1rem;
-    border-radius: 0.5rem 0 0.5rem 0;
-    color: #E4F7F2;
-    font-size: 1.6rem;
-    font-weight: 500;
-
-}
-
-.ourstoryBox p,.coreValues p,.vision p,.mission p{
-    color: #003326;
-    font-size: 0.8rem;
-    font-weight: 400;
-}
 
 
-.testimonial{
-    width: 100%;
-    height: auto;
-    background-color: #E4F7F2;
-}
+
+
 
 .services{
     width: 100%;
@@ -295,7 +353,6 @@ svg{
     align-items: center;
     row-gap: 2rem;
 }
-
 
 .servicesTitle{
 width: fit-content;
@@ -378,6 +435,13 @@ height: auto;
     cursor: pointer;
     border-radius:0.5rem ;
 }
+
+.services button:hover{
+    transition: all 1s;
+    background-color: #B8E5DA;
+    color: #001913;
+}
+
 
 .service1img{
     width: 50%;
@@ -533,6 +597,13 @@ height: auto;
     border-top-right-radius: 0.5rem;
     flex: 0.9;
 }
+
+.testimonial{
+    width: 100%;
+    height: auto;
+  
+}
+
 .testimonials{
     width: 100%;
     height: auto;
@@ -627,7 +698,7 @@ border-radius: 360px;
     align-items: center;
     padding: 2rem 7.2rem;
     row-gap: 1rem;
-    background-color:#E4F7F2 ;
+    
 }
 
 .sponsorTitle{
@@ -717,7 +788,7 @@ border-radius: 360px;
 
 .adress a{
 cursor: pointer;
-color: red;
+color: #AEE01F;
 }
 
 .instagram,.facebook,.xsocial{
@@ -729,6 +800,8 @@ color: red;
     align-items: center;
     column-gap: 0.5rem;
 }
+
+
 .socials{
     width: 32%;
     height: auto;
@@ -737,6 +810,10 @@ color: red;
     justify-content:start;
     align-items: start;
     row-gap: 1rem; 
+}
+
+.socials i{
+    color: #AEE01F;
 }
 
 .socials p{
@@ -800,6 +877,38 @@ color: red;
     padding: 1rem 7.2rem;
 }
 
+.aboutUsText li{
+    color: #003326;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.ourstoryBox,.coreValues,.vision,.mission{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
+    background-color: #001913;
+    padding: 1rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+    color: #E4F7F2;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.ourstoryBox p,.coreValues p,.vision p,.mission p{
+    color: #003326;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
 .aboutusThrees{
     width: 100%;
     height: auto;
@@ -815,14 +924,14 @@ color: red;
 .containerA,.containerB,.containerC{
     width: 30%;
     height: auto;
+    border: 1px solid #001913;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0 0.5rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    border: 2px solid #001913;
-    padding: 1rem;
-    row-gap: 0.5rem;
-    border-radius: 0.5rem;
+    background-color: #F7FFFD;
     flex: 1;
 
 }
@@ -897,9 +1006,9 @@ color: red;
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
-    border: 2px solid #001913;
-    padding: 1rem ;
-    border-radius: 0.5rem;
+    border: 1px solid #001913;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0 0.5rem 0;
     
 
 }
@@ -948,111 +1057,15 @@ color: red;
         flex-direction: row;
         justify-content:space-between;
         align-items: start;
-        padding: 2rem 4rem;
+        padding: 2rem 2rem;
         background-color:blue ;
     }
-    .headerBox{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: center;
-        column-gap: 1.5rem;
+  
     
-    }
-    
-    .logoBox{
-        width:fit-content;
-        height: auto;
-    }
-    
-    svg{
-        width: fit-content;
-        height: auto;
-    }
-    .linkAndButtonBox{
-        width: fit-content;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:start;
-        align-items: center;
-        column-gap: 1rem;
-    }
-    
-    .hamburger{
-        width:fit-content;
-        height: auto;
-        display: none;
-    }
-    
-    /* .hamburger i{
-        width: fit-content;
-        height: auto;
-        color: white;
-        fill: none;
-    } */
-    
-    .sitelinkBox{
-        width: fit-content;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:start;
-        align-items: center;
-        column-gap: 1rem;
-        
-    }
-    
-    .sitelinkBox p{
-        color:#F7FFFD;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 400;
-        text-wrap: nowrap;
-        cursor: pointer;
-    }
-    .buttonBox{
-        width: fit-content;
-        height: auto;
-    }
-    
-    .contactUs{
-        padding: 1rem;
-        background-color: #F7FFFD;
-        color: #001913;
-        border: none;
-        outline: none;
-        font-size: 1rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 500;
-        text-wrap: nowrap;
-        cursor: pointer;
-        border-radius:0.5rem ;
-    }
-    
-    .contactUs:hover{
-        transition: all 1s;
-        padding: 1rem;
-        background-color: #f8f8f8;
-        color: #001913;
-        border: none;
-        outline: none;
-        font-size: 1rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 500;
-        text-wrap: nowrap;
-        cursor: pointer;
-        border-radius:0.5rem ;
-    }
-    
+
     .hero{
         width: 100%;
-        height:86vh;
+        height:60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1064,11 +1077,6 @@ color: red;
         padding: 2rem 4rem;
     }
     
-    .heroBox{
-        width: 100%;
-        height: auto;
-       
-    }
     
     .heroTextBox{
         width: 70%;
@@ -1083,10 +1091,10 @@ color: red;
     
     .heroTextBox h1{
         color:#F7FFFD;
-        font-size: 4.6rem;
-        font-weight: 800;
+        font-size: 4.2rem;
+        font-weight: 700;
         letter-spacing: 0.5px;
-        line-height: 5rem;
+        line-height: 4rem;
     }
     
     
@@ -1098,138 +1106,16 @@ color: red;
         font-weight: 400;
     }
     
-    .heroTextBox button{
-        padding: 1rem;
-        background-color: #F7FFFD;
-        color: #001913;
-        border: none;
-        outline: none;
-        font-size: 1rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 500;
-        text-wrap: nowrap;
-        cursor: pointer;
-        border-radius:0.5rem ;
-    }
-    
-    .heroTextBox button:hover{
-        transition: all 1s;
-        padding: 1rem;
-        background-color: #B8E5DA;
-        color: #001913;
-        border: none;
-        outline: none;
-        font-size: 1rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 500;
-        text-wrap: nowrap;
-        cursor: pointer;
-        border-radius:0.5rem ;
-    }
-    .aboutUs{
+    .ourcompany{
         width: 100%;
         height: auto;
         padding: 2rem 4rem;
-        background-color:#001913 ;
     }
-    
-    .aboutusBox{
+
+    .services{
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        row-gap: 1rem;
-        
-    }
-    
-    .aboutusTitlte{
-        width: fit-content;
-        height: auto;
-    }
-    
-    .aboutusTitlte h1{
-        background-color: #F7FFFD;
-        padding: 1rem;
-        border-radius: 0.5rem 0 0.5rem 0;
-        color: #001913;
-        font-size: 1.6rem;
-        font-weight: 500;
-        
-    }
-    
-    .aboutusOthers{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: stretch;
-    }
-    
-    .aboutUsText{
-        width: 50%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        background-color:#F7FFFD ;
-        padding: 1rem;
-        border-bottom-left-radius: 0.5rem;
-        border-top-left-radius: 0.5rem;
-        flex: 1;
-        row-gap: 1rem;
-    }
-    
-    .aboutUsImage{
-        width: 50%;
-        height: auto;
-        display: flex;
-        background-image: url(./about.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-bottom-right-radius: 0.5rem;
-        border-top-right-radius: 0.5rem;
-        flex: 1;
-    }
-    
-    
-    .ourstoryBox,.coreValues,.vision,.mission{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        row-gap: 0.5rem;
-    }
-    
-    .ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
-        background-color: #001913;
-        padding: 1rem;
-        border-radius: 0.5rem 0 0.5rem 0;
-        color: #E4F7F2;
-        font-size: 1.6rem;
-        font-weight: 500;
-    
-    }
-    
-    .ourstoryBox p,.coreValues p,.vision p,.mission p{
-        color: #003326;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-    
-    
-    .testimonial{
-        width: 100%;
-        height: auto;
-        background-color: #E4F7F2;
+        padding: 2rem 4rem;
     }
     
     .testimonials{
@@ -1243,77 +1129,13 @@ color: red;
         row-gap: 1rem;
     }
     
-    .testimonalTitle{
-    width: fit-content;
-    height: auto;
-    }
-    
-    .testimonalTitle h1{
-        background-color: #001913;
-        padding: 1rem;
-        border-radius: 0.5rem 0 0.5rem 0;
-        color: #E4F7F2;
-        font-size: 1.6rem;
-        font-weight: 500;
-    }
-    
-    .sayingBox{
-    width: 100%;
-    height: auto;
-    row-gap: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-    }
-    
-    .box1{
-        width: 30%;
+ 
+    .sponsors{
+        width: 100%;
         height: auto;
-        border: 1px solid #001913;
-        padding: 0.5rem;
-        border-radius: 0.5rem 0 0.5rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #F7FFFD;
+        padding: 2rem 4rem;
     }
-    
-    .box1 img{
-    width: 20%;
-    height: auto;
-    border-radius: 360px;
-    }
-    
-    .box1 p{
-        color: #003326;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-    
-    .nameBox{
-        width: fit-content;
-        height: auto; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .nameBox h4{
-        color: #003326;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    
-    
-    .nameBox p{
-        color: #00334C;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
+ 
     
     .footer{
         width: 100%;
@@ -1327,74 +1149,60 @@ color: red;
         column-gap: 2rem;
     }
     
-    .textlinks{
-        width: 32%;
+    /* our company page */
+   
+    .aboutusImage{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./about.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 4rem;
+    }
+    
+    
+    
+    .aboutUsText{
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content:start;
+        justify-content: start;
         align-items: start;
         row-gap: 1rem;
+        padding: 1rem 4rem;
+       
     }
     
-    .adress{
-        width: 32%;
+
+    .ourstoryBox,.coreValues,.vision,.mission{
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content:start;
+        justify-content: start;
         align-items: start;
-        row-gap: 1rem; 
+        row-gap: 0.5rem;
     }
     
-    .adress p{
-        font-size: 0.8rem;
-        font-weight: 400;
-        color:#F7FFFD;
-    }
     
-    .adress a{
-    cursor: pointer;
-    color: red;
-    }
-    
-    .instagram,.facebook,.xsocial{
-        width: fit-content;
+    .aboutusThrees{
+        width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:start;
-        align-items: center;
-        column-gap: 0.5rem;
+        padding: 1rem 4rem;
+        
     }
-    .socials{
-        width: 32%;
+
+
+    .achievements{
+        width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:start;
-        align-items: start;
-        row-gap: 1rem; 
-    }
-    
-    .socials p{
-        color:#F7FFFD;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 400;
-        text-wrap: nowrap;
-        cursor: pointer;
-    }
-    
-    .textlinks a{
-        color:#F7FFFD;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 400;
-        text-wrap: nowrap;
-        cursor: pointer;
+        padding: 1rem 4rem;
+        
     }
     
 }
@@ -1482,7 +1290,16 @@ color: red;
         background-color:#001913 ;
     }
     
-    .aboutusBox{
+    /* aboutus starts */
+
+    .ourcompany{
+        width: 100%;
+        height: auto;
+        padding: 1rem 4rem;
+        
+    }
+    
+    .ourcompanyBox{
         width: 100%;
         height: auto;
         display: flex;
@@ -1490,50 +1307,69 @@ color: red;
         justify-items: center;
         align-items: center;
         row-gap: 1rem;
+        margin-bottom: 1rem;
         
     }
     
-    .aboutusTitlte{
-        width: fit-content;
+    .ourcompanyTitlte{
+        width: 100%;
         height: auto;
     }
     
-    .aboutusTitlte h1{
-        background-color: #F7FFFD;
+    .ourcompanyTitlte h1{
+        background-color: #001913;
         padding: 1rem;
         border-radius: 0.5rem 0 0.5rem 0;
-        color: #001913;
-        font-size: 1.6rem;
-        font-weight: 500;
-        
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500; 
+        text-align: center;
     }
     
-    .aboutusOthers{
+    
+    .ourcompanyOthers{
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: stretch;
+        flex-direction: column;
+        justify-content:start;
+        align-items: start;
     }
     
-    .aboutUsText{
-        width: 50%;
+    .ourcompanyDescription{
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        row-gap: 0.5rem;
         justify-content: start;
         align-items: start;
-        background-color:#F7FFFD ;
-        padding: 1rem;
-        border-bottom-left-radius: 0.5rem;
-        border-top-left-radius: 0.5rem;
         flex: 1;
-        row-gap: 1rem;
     }
     
-    .aboutUsImage{
-        width: 50%;
+    .ourcompanyDescription p{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400; 
+    }
+    
+    .ourcompanyDescription button{
+        padding: 1rem;
+        background-color: #001913;
+        color: #F7FFFD;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 0.2px;
+        font-weight: 500;
+        text-wrap: nowrap;
+        cursor: pointer;
+        border-radius:0.5rem ;
+    }
+    
+    .ourcompanyImage{
+        width: 100%;
         height: auto;
         display: flex;
         background-image: url(./about.jpg);
@@ -1542,215 +1378,530 @@ color: red;
         background-size: cover;
         border-bottom-right-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
-        flex: 1;
+        padding: 5rem;
+        order: -1;
+        margin-bottom: 0.5rem;
     }
     
+        
+        
+        
+        
     
-    .ourstoryBox,.coreValues,.vision,.mission{
+        /* services mobile starts */
+        .services{
+            width: 100%;
+            height: auto;
+            padding: 1rem 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+            row-gap: 0.5rem;
+        }
+    
+        .servicesTitle{
+            width: 100%;
+            height: auto;
+        }
+    
+        .servicesTitle h1{
+            background-color: #001913;
+            padding: 1rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            color: #E4F7F2;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+    
+    
+        .service1ButTextImg{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+            row-gap: 1rem;
+        }
+        
+        .service1TextButton{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+            row-gap: 0.5rem;
+           
+        }
+        
+        .service1Texts{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+        }
+        
+        .service1Texts h1{
+            color: #003326;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .service1Texts p{
+            color: #003326;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+        
+        
+        
+        .service1img{
+            width: 100%;
+            height: auto;
+            background-image: url(./agroservice.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 5rem 0;
+            order: -1;
+       
+        }
+        
+    
+        .service2TextButImg{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+          
+        }
+        
+        .service2TextButton{
+            width: 100%;
+            height: auto;
+            margin-top: 0.5rem;
+        }
+        
+        .service2Texts{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+        }
+        
+        .service2Texts h1{
+            color: #003326;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    
+        .service2Texts p{
+            color: #003326;
+            font-size: 0.8rem;
+            font-weight: 400; 
+        }
+        
+        
+        
+        .service2Img{
+            width: 100%;
+            height: auto;
+            background-image: url(./farmservice.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 5rem 0;
+            
+           
+        }
+    
+    
+        .service3TextButImg{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+            column-gap: 1rem;
+        
+        }
+        
+        .service3Texts{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+        }
+        
+        .service3Texts h1{
+            color: #003326;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .service3Texts P{
+            color: #003326;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+        
+        .service3TextButton{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+            row-gap: 0.5rem;
+        
+        }
+        
+        .service3image{
+            width: 100%;
+            height: auto;
+            background-image: url(./insurance.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 5rem 0;
+            order: -1;
+            margin-bottom: 0.5rem;
+        }
+    
+        
+        /* services mobile stops */
+        
+       
+        /* testimonial mobile starts */
+       
+        .testimonials{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            padding: 1rem 4rem ;
+            row-gap: 1rem;
+        }
+        
+        .testimonalTitle{
+        width: 100%;
+        height: auto;
+        }
+        
+        .testimonalTitle h1{
+            background-color: #001913;
+            padding: 1rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            color: #E4F7F2;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .sayingBox{
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        row-gap: 0.5rem;
-    }
-    
-    .ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
-        background-color: #001913;
-        padding: 1rem;
-        border-radius: 0.5rem 0 0.5rem 0;
-        color: #E4F7F2;
-        font-size: 1.6rem;
-        font-weight: 500;
-    
-    }
-    
-    .ourstoryBox p,.coreValues p,.vision p,.mission p{
-        color: #003326;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-  
-    li{
-        color: #003326;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-    
-
-    .testimonial{
-        width: 100%;
-        height: auto;
-        background-color: #E4F7F2;
-    }
-    
-    .testimonials{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        padding: 2rem 4rem;
         row-gap: 1rem;
-    }
-    
-    .testimonalTitle{
-    width: fit-content;
-    height: auto;
-    }
-    
-    .testimonalTitle h1{
-        background-color: #001913;
-        padding: 1rem;
-        border-radius: 0.5rem 0 0.5rem 0;
-        color: #E4F7F2;
-        font-size: 1.6rem;
-        font-weight: 500;
-    }
-    
-    .sayingBox{
-    width: 100%;
-    height: auto;
-    row-gap: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-    }
-    
-    .box1{
-        width: 30%;
-        height: auto;
-        border: 1px solid #001913;
-        padding: 0.5rem;
-        border-radius: 0.5rem 0 0.5rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #F7FFFD;
-    }
-    
-    .box1 img{
-    width: 20%;
-    height: auto;
-    border-radius: 360px;
-    }
-    
-    .box1 p{
-        color: #003326;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-    
-    .nameBox{
-        width: fit-content;
-        height: auto; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .nameBox h4{
-        color: #003326;
-        font-size: 1rem;
-        font-weight: 500;
-    }
+        
+        
+        }
+        
+        .box1{
+            width: 100%;
+            height: auto;
+            border: 1px solid #001913;
+            padding: 0.5rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            background-color: #F7FFFD;
+        } 
+        /* testimonial mobile stops */
     
     
-    .nameBox p{
-        color: #00334C;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
     
-    .footer{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: center;
-        padding: 2rem 4rem;
-        background-color:#001913 ;
-        column-gap: 2rem;
-    }
+        /* footer mobile starts */
+       
+        .footer{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+            padding: 1rem 4rem;
+            background-color:#001913 ;
+            column-gap: 2rem;
+            row-gap: 1rem;
+            flex-wrap: wrap;
+        } 
     
-    .textlinks{
-        width: 32%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:start;
-        align-items: start;
-        row-gap: 1rem;
-    }
+        .textlinks{
+            display: none;
+        }
     
-    .adress{
-        width: 32%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:start;
-        align-items: start;
-        row-gap: 1rem; 
-    }
+        .socials{
+            width: 40%;
+            height: auto;
+            
+        }
     
-    .adress p{
-        font-size: 0.8rem;
-        font-weight: 400;
-        color:#F7FFFD;
-    }
+        .adress{
+            width: 40%;
+            height: auto;
+           
+        }
     
-    .adress a{
-    cursor: pointer;
-    color: red;
-    }
+        /* footer mobile stops */
     
-    .instagram,.facebook,.xsocial{
-        width: fit-content;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:start;
-        align-items: center;
-        column-gap: 0.5rem;
-    }
-    .socials{
-        width: 32%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:start;
-        align-items: start;
-        row-gap: 1rem; 
-    }
     
-    .socials p{
-        color:#F7FFFD;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 400;
-        text-wrap: nowrap;
-        cursor: pointer;
-    }
-    
-    .textlinks a{
-        color:#F7FFFD;
-        font-size: 0.8rem;
-        line-height: 1rem;
-        letter-spacing: 0.2px;
-        font-weight: 400;
-        text-wrap: nowrap;
-        cursor: pointer;
-    }
+        /* sponsor mobile starts */
 
+        .sponsor {
+            width: 40%; /* Increase sponsor width on mobile devices */
+            margin-bottom: 0.5rem; /* Add some space between items */
+        }
+    
+        .sponsors {
+            width: 100%;
+            height: auto;
+            padding: 1rem 4rem; /* Adjust padding for smaller screens */
+        }
+    
+        .slide {
+            justify-content: center; /* Center items on small screens */
+            column-gap: 1rem;
+        }
+       
+    
+        .sponsorTitle{
+            width: 100%;
+            height: auto;
+        }
+        
+       
+        .sponsorTitle h1{
+            background-color: #001913;
+            padding: 1rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            color: #E4F7F2;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+    
+        /* sponsor mobile ends */
+    
+    
+        /* our company page */
+        .aboutUsbox{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            row-gap: 0.5rem;
+           
+        }
+        .aboutusImage{
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./about.jpg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 4rem;
+        }
+        
+        .aboutusImageTitle{
+            color: #F7FFFD;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .aboutUsText{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            row-gap: 1rem;
+            padding: 1rem 4rem;
+           
+        }
+        
+    
+        .ourstoryBox,.coreValues,.vision,.mission{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            row-gap: 0.5rem;
+        }
+        
+        .ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
+            width: 100%;
+            height: auto;
+            background-color: #001913;
+            padding: 1rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            color: #E4F7F2;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+        
+        }
+        
+        .ourstoryBox p,.coreValues p,.vision p,.mission p{
+            color: #003326;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+    
+        .aboutusThrees{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            padding: 1rem 4rem;
+            flex-wrap: wrap;
+            row-gap: 1rem;
+        }
+        
+        .containerA,.containerB,.containerC{
+            width: 100%;
+            height: auto;
+            border: 1px solid #001913;
+            padding: 0.5rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F7FFFD;
+         
+        
+        }
+    
+    
+        .achievements{
+            width: 100%;
+            height: auto;
+            padding: 1rem 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            row-gap: 1rem;
+        }
+        
+        .achievementTitle{
+            width: 100%;
+            height: auto;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .achievementTitle h1{
+            background-color: #001913;
+            padding: 1rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            color: #E4F7F2;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .awardBox{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            row-gap: 1rem;
+        
+        }
+        
+        .award1,.award2{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            row-gap: 0.5rem;
+            border: 1px solid #001913;
+            padding: 0.5rem;
+            border-radius: 0.5rem 0 0.5rem 0;
+            
+        
+        }
+        
+        .awardText{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            row-gap: 0.5rem;
+          
+        }
+        
+        .awardText h4{
+            color: #003326;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .awardText p{
+            font-size: 0.8rem;
+            font-weight: 400;
+            color:#001913;
+        }
+        
+        .awardImage{
+            width: 70%;
+            height: auto;
+            order: -1;
+          
+        }
+        
+        .awardImage img{
+            width: 100%;
+            height: auto;
+        }
 }
+
 /* 768 screen */
 @media only screen and (max-width: 768px) {
    
@@ -1776,9 +1927,14 @@ color: red;
     }
 
     .hamburger{
-        display: flex;
-        font-size: 40px;
-        color: white;
+        width: fit-content;
+        height: auto;
+       display: flex;
+    }
+
+    .hamburger i{
+        font-size: 36px;
+        color: #AEE01F;
     }
 
     .linkAndButtonBox{
@@ -1807,52 +1963,129 @@ color: red;
     }
 
 
-    .heroTextBox{
-        width: 50%;
+.heroTextBox h1{
+    color:#F7FFFD;
+    font-size: 4.6rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 5rem;
+}
+
+.heroTextBox{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.heroTextBox h1{
+    color:#F7FFFD;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 3rem;
+}
+
+.heroTextBox p{
+    color: #e6e5e5;;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+    
+    
+    .ourcompany{
+        width: 100%;
+        height: auto;
+        padding: 1rem 2rem;
+    }
+    
+    .ourcompanyBox{
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        row-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+       
+        
     }
     
-    .heroTextBox h1{
-        color:#F7FFFD;
-        font-size: 4.6rem;
-        font-weight: 800;
-        letter-spacing: 0.5px;
-        line-height: 5rem;
+    .ourcompanyTitlte{
+        width: 100%;
+        height: auto;
     }
-
-    .heroTextBox{
-        width: 80%;
+    
+    .ourcompanyTitlte h1{
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500; 
+        text-align: center;
+    }
+    
+    
+    .ourcompanyOthers{
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        justify-content:start;
+        align-items: start;
+    }
+    
+    .ourcompanyDescription{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
         justify-content: start;
         align-items: start;
-        row-gap: 1rem;
+        flex: 1;
     }
     
-    .heroTextBox h1{
-        color:#F7FFFD;
-        font-size: 3.4rem;
-        font-weight: 600;
+    .ourcompanyDescription p{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400; 
+    }
+    
+    .ourcompanyDescription button{
+        padding: 1rem;
+        background-color: #001913;
+        color: #F7FFFD;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        line-height: 1rem;
         letter-spacing: 0.2px;
-        line-height: 3rem;
-    }
-
-    
-    .heroTextBox p{
-        color: #e6e5e5;;
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-        letter-spacing: 0.2px;
-        font-weight: 400;
+        font-weight: 500;
+        text-wrap: nowrap;
+        cursor: pointer;
+        border-radius:0.5rem ;
     }
     
-    
+    .ourcompanyImage{
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-image: url(./about.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        padding: 5rem;
+        order: -1;
+        margin-bottom: 0.5rem;
+    }
 
     .aboutUs{
         width: 100%;
@@ -1872,22 +2105,6 @@ color: red;
         
     }
     
-    .aboutusTitlte{
-        width: 100%;
-        height: auto;
-    }
-
-    .aboutusOthers{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:start;
-        align-items: start;
-        align-items: stretch;
-    }
-    
-    
 
   
     .aboutUsText{
@@ -1897,7 +2114,6 @@ color: red;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        background-color:#F7FFFD ;
         padding: 1rem;
         border-bottom-left-radius: 0.5rem;
         border-top-left-radius: 0.5rem;
@@ -1905,9 +2121,6 @@ color: red;
         row-gap: 1rem;
     }
     
-    .aboutUsImage{
-       display: none;
-    }
     
     
     .ourstoryBox,.coreValues,.vision,.mission{
@@ -1936,13 +2149,199 @@ color: red;
         font-weight: 400;
     }
   
-    li{
+   
+
+    .services{
+        width: 100%;
+        height: auto;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        row-gap: 0.5rem;
+    }
+
+    .servicesTitle{
+        width: 100%;
+        height: auto;
+    }
+
+    .servicesTitle h1{
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+    .service1ButTextImg{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        row-gap: 1rem;
+    }
+    
+    .service1TextButton{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        row-gap: 0.5rem;
+       
+    }
+    
+    .service1Texts{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+    }
+    
+    .service1Texts h1{
+        color: #003326;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .service1Texts p{
         color: #003326;
         font-size: 0.8rem;
         font-weight: 400;
     }
-
     
+    
+    
+    .service1img{
+        width: 100%;
+        height: auto;
+        background-image: url(./agroservice.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0;
+        order: -1;
+   
+    }
+    
+
+    .service2TextButImg{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+      
+    }
+    
+    .service2TextButton{
+        width: 100%;
+        height: auto;
+        margin-top: 0.5rem;
+    }
+    
+    .service2Texts{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+    }
+    
+    .service2Texts h1{
+        color: #003326;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .service2Texts p{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400; 
+    }
+    
+    
+    
+    .service2Img{
+        width: 100%;
+        height: auto;
+        background-image: url(./farmservice.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0;
+        
+       
+    }
+
+
+    .service3TextButImg{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        column-gap: 1rem;
+    
+    }
+    
+    .service3Texts{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+    }
+    
+    .service3Texts h1{
+        color: #003326;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .service3Texts P{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    
+    .service3TextButton{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        row-gap: 0.5rem;
+    
+    }
+    
+    .service3image{
+        width: 100%;
+        height: auto;
+        background-image: url(./insurance.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0;
+        order: -1;
+        margin-bottom: 0.5rem;
+    }
+
 
     .testimonials{
         width: 100%;
@@ -2008,6 +2407,10 @@ color: red;
         flex-wrap: wrap;
     } 
 
+    .textlinks{
+        display: none;
+    }
+
     
     .sponsor {
         width: 40%; /* Increase sponsor width on mobile devices */
@@ -2015,7 +2418,9 @@ color: red;
     }
 
     .sponsors {
-        padding: 1rem; /* Adjust padding for smaller screens */
+        width: 100%;
+        height: auto;
+        padding: 1rem 2rem; /* Adjust padding for smaller screens */
     }
 
     .slide {
@@ -2032,6 +2437,193 @@ color: red;
         font-weight: 500;
     }
 
+    /* our company page */
+    .aboutUsbox{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+       
+    }
+    .aboutusImage{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./about.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    
+    .aboutusImageTitle{
+        color: #F7FFFD;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    .aboutUsText{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        padding: 1rem 2rem;
+
+    }
+    
+
+    .ourstoryBox,.coreValues,.vision,.mission{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+    }
+    
+    .ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
+        width: 100%;
+        height: auto;
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    
+    }
+    
+    .ourstoryBox p,.coreValues p,.vision p,.mission p{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .aboutusThrees{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 1rem 2rem;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .containerA,.containerB,.containerC{
+        width: 100%;
+        height: auto;
+        border: 1px solid #001913;
+        padding: 0.5rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F7FFFD;
+     
+    
+    }
+
+
+    .achievements{
+        width: 100%;
+        height: auto;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    
+    .achievementTitle{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .achievementTitle h1{
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .awardBox{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+    
+    }
+    
+    .award1,.award2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 0.5rem;
+        border: 1px solid #001913;
+        padding: 0.5rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        
+    
+    }
+    
+    .awardText{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 0.5rem;
+      
+    }
+    
+    .awardText h4{
+        color: #003326;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .awardText p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color:#001913;
+    }
+    
+    .awardImage{
+        width: 70%;
+        height: auto;
+        order: -1;
+      
+    }
+    
+    .awardImage img{
+        width: 100%;
+        height: auto;
+    }
 
 }
 
@@ -2068,9 +2660,6 @@ color: red;
     .linkAndButtonBox{
         display: none;
     }
-
-    
-   
 
     .hero{
         width: 100%;
@@ -2132,116 +2721,287 @@ color: red;
     
     
 
-    .aboutUs{
-        width: 100%;
-        height: auto;
-        padding: 2rem 7.2rem;
-        background-color:#001913 ;
-    }
-    
-    .aboutusBox{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        row-gap: 1rem;
-        
-    }
-    
-    .aboutusTitlte{
-        width: 100%;
-        height: auto;
-    }
+/* aboutus starts */
 
-    .aboutusOthers{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:start;
-        align-items: start;
-        align-items: stretch;
-    }
+.ourcompany{
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem;
+}
+
+.ourcompanyBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.ourcompanyTitlte{
+    width: 100%;
+    height: auto;
+}
+
+.ourcompanyTitlte h1{
+    background-color: #001913;
+    padding: 1rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+    color: #E4F7F2;
+    font-size: 1.2rem;
+    font-weight: 500; 
+    text-align: center;
+}
+
+
+.ourcompanyOthers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+}
+
+.ourcompanyDescription{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: start;
+    align-items: start;
+    flex: 1;
+}
+
+.ourcompanyDescription p{
+    color: #003326;
+    font-size: 0.8rem;
+    font-weight: 400; 
+}
+
+.ourcompanyDescription button{
+    padding: 1rem;
+    background-color: #001913;
+    color: #F7FFFD;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border-radius:0.5rem ;
+}
+
+
+
+    
+    
     
     
 
-    .aboutUs{
+    /* services mobile starts */
+    .services{
         width: 100%;
         height: auto;
         padding: 1rem 1rem;
-        background-color:#001913 ;
-    }
-    
-    .aboutUsText{
-        width: 100%;
-        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        background-color:#F7FFFD ;
-        padding: 1rem;
-        border-bottom-left-radius: 0.5rem;
-        border-top-left-radius: 0.5rem;
-        flex: 1;
-        row-gap: 1rem;
-    }
-    
-    .aboutUsImage{
-       display: none;
-    }
-    
-    
-    .ourstoryBox,.coreValues,.vision,.mission{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+        justify-items: start;
         align-items: start;
         row-gap: 0.5rem;
     }
-    
-    .ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
+
+    .servicesTitle{
+        width: 100%;
+        height: auto;
+    }
+
+    .servicesTitle h1{
         background-color: #001913;
         padding: 1rem;
         border-radius: 0.5rem 0 0.5rem 0;
         color: #E4F7F2;
         font-size: 1.2rem;
         font-weight: 500;
-    
-    }
-    
-    .ourstoryBox p,.coreValues p,.vision p,.mission p{
-        color: #003326;
-        font-size: 0.8rem;
-        font-weight: 400;
+        text-align: center;
     }
 
-    li{
-        color: #003326;
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-    
 
-    .services{
+    .service1ButTextImg{
         width: 100%;
         height: auto;
-        padding: 1rem 1rem;
-        background-color:#ffffff ;
         display: flex;
         flex-direction: column;
         justify-items: start;
         align-items: start;
-        row-gap: 2rem;
+        row-gap: 1rem;
+    }
+    
+    .service1TextButton{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        row-gap: 0.5rem;
+       
+    }
+    
+    .service1Texts{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+    }
+    
+    .service1Texts h1{
+        color: #003326;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .service1Texts p{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400;
     }
     
     
+    
+    .service1img{
+        width: 100%;
+        height: auto;
+        background-image: url(./agroservice.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0;
+        order: -1;
    
+    }
+    
 
+    .service2TextButImg{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+      
+    }
+    
+    .service2TextButton{
+        width: 100%;
+        height: auto;
+        margin-top: 0.5rem;
+    }
+    
+    .service2Texts{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+    }
+    
+    .service2Texts h1{
+        color: #003326;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .service2Texts p{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400; 
+    }
+    
+    
+    
+    .service2Img{
+        width: 100%;
+        height: auto;
+        background-image: url(./farmservice.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0;
+        
+       
+    }
+
+
+    .service3TextButImg{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        column-gap: 1rem;
+    
+    }
+    
+    .service3Texts{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+    }
+    
+    .service3Texts h1{
+        color: #003326;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .service3Texts P{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    
+    .service3TextButton{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        row-gap: 0.5rem;
+    
+    }
+    
+    .service3image{
+        width: 100%;
+        height: auto;
+        background-image: url(./insurance.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0;
+        order: -1;
+        margin-bottom: 0.5rem;
+    }
+
+    
+    /* services mobile stops */
+    
+   
+    /* testimonial mobile starts */
    
     .testimonials{
         width: 100%;
@@ -2266,6 +3026,7 @@ color: red;
         color: #E4F7F2;
         font-size: 1.2rem;
         font-weight: 500;
+        text-align: center;
     }
     
     .sayingBox{
@@ -2291,7 +3052,12 @@ color: red;
         justify-content: start;
         align-items: center;
         background-color: #F7FFFD;
-    }
+    } 
+    /* testimonial mobile stops */
+
+
+
+    /* footer mobile starts */
    
     .footer{
         width: 100%;
@@ -2307,6 +3073,26 @@ color: red;
         flex-wrap: wrap;
     } 
 
+    .textlinks{
+        display: none;
+    }
+
+    .socials{
+        width: 40%;
+        height: auto;
+        
+    }
+
+    .adress{
+        width: 40%;
+        height: auto;
+       
+    }
+
+    /* footer mobile stops */
+
+
+    /* sponsor mobile starts */
     .sponsor {
         width: 40%; /* Increase sponsor width on mobile devices */
         margin-bottom: 0.5rem; /* Add some space between items */
@@ -2321,6 +3107,13 @@ color: red;
         column-gap: 1rem;
     }
    
+
+    .sponsorTitle{
+        width: 100%;
+        height: auto;
+    }
+    
+   
     .sponsorTitle h1{
         background-color: #001913;
         padding: 1rem;
@@ -2328,5 +3121,198 @@ color: red;
         color: #E4F7F2;
         font-size: 1.2rem;
         font-weight: 500;
+        text-align: center;
     }
+
+    /* sponsor mobile ends */
+
+
+    /* our company page */
+    .aboutUsbox{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+       
+    }
+    .aboutusImage{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./about.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    
+    .aboutusImageTitle{
+        color: #F7FFFD;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    .aboutUsText{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        padding: 1rem 1rem;
+      
+    }
+    
+
+    .ourstoryBox,.coreValues,.vision,.mission{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+    }
+    
+    .ourstoryBox h1,.coreValues h1,.vision h1,.mission h1{
+        width: 100%;
+        height: auto;
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    
+    }
+    
+    .ourstoryBox p,.coreValues p,.vision p,.mission p{
+        color: #003326;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .aboutusThrees{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 1rem 1rem;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .containerA,.containerB,.containerC{
+        width: 100%;
+        height: auto;
+        border: 1px solid #001913;
+        padding: 0.5rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F7FFFD;
+     
+    
+    }
+
+
+    .achievements{
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    
+    .achievementTitle{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .achievementTitle h1{
+        background-color: #001913;
+        padding: 1rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        color: #E4F7F2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .awardBox{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+    
+    }
+    
+    .award1,.award2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 0.5rem;
+        border: 1px solid #001913;
+        padding: 0.5rem;
+        border-radius: 0.5rem 0 0.5rem 0;
+        
+    
+    }
+    
+    .awardText{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 0.5rem;
+      
+    }
+    
+    .awardText h4{
+        color: #003326;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .awardText p{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color:#001913;
+    }
+    
+    .awardImage{
+        width: 70%;
+        height: auto;
+        order: -1;
+      
+    }
+    
+    .awardImage img{
+        width: 100%;
+        height: auto;
+    }
+    
 }
