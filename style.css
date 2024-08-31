@@ -1082,8 +1082,12 @@ color: #AEE01F;
     align-items: start;
     row-gap: 1rem;
     flex: 1.3;
-    background-color: #003326;
+    background-color: #E4F7F2;
     padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contactBack.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -1092,26 +1096,34 @@ color: #AEE01F;
     height: auto;
 }
 
-.contactIntro p{
-    color: #E4F7F2;
+.contactIntro p,.phoneNumber a,.emailAdress a,.homeAdress p{
+    color: #ffffff;
     font-size: 0.9rem;
     font-weight: 400;
 }
 
 
-.address{
+.contactAdress{
     width: 100%;
-    height: auto; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
 }
 
-.address p{
-    font-size: 0.9rem;
-    font-weight: 400;
-    color:#E4F7F2;
+.homeAdress,.emailAdress,.phoneNumber{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
 }
 
-.address a{
-cursor: pointer;
+.homeAdress i,.contactAdress i,.phoneNumber i{
 color: #AEE01F;
 }
 
@@ -1175,6 +1187,11 @@ input,textarea{
     width: 100%;
     height: auto;
     padding: 0.5rem;
+}
+
+label{
+    color: #001913;
+    font-size: 0.8rem;
 }
 
 form button{
@@ -1351,6 +1368,33 @@ form button{
         padding: 1rem 4rem;
         
     }
+
+     /* Contact page */
+     .contactImage{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contact.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        text-wrap: nowrap;
+    }
+    
+    .contactBox{
+        width: 100%;
+        height: auto;
+        padding: 1rem 4rem;
+    }
+    
+  
+    
+    
+    
+    
     
 }
 
@@ -2047,6 +2091,68 @@ form button{
             width: 100%;
             height: auto;
         }
+
+         /* Contact page */
+       .contactImage{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contact.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 4rem;
+        text-wrap: nowrap;
+    }
+    
+    .contactBox{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: start;
+        align-items: start;
+        padding: 1rem 4rem;
+    }
+    
+    .contactA{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        background-color: #E4F7F2;
+        padding: 2rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contactBack.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    
+    .contactB{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+        border: 1px solid #003326;
+        padding: 2rem;
+    }
+    
+    .contactTitle{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 }
 
 /* 768 screen */
@@ -2097,7 +2203,7 @@ form button{
 
     .hero{
         width: 100%;
-        height:50vh;
+        height:70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2772,6 +2878,67 @@ form button{
         height: auto;
     }
 
+       /* Contact page */
+       .contactImage{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contact.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        text-wrap: nowrap;
+    }
+    
+    .contactBox{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: start;
+        align-items: start;
+        padding: 1rem 2rem;
+    }
+    
+    .contactA{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        background-color: #E4F7F2;
+        padding: 2rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contactBack.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    
+    .contactB{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+        border: 1px solid #003326;
+        padding: 2rem;
+    }
+    
+    .contactTitle{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 }
 
 /* mobile media */
@@ -3463,4 +3630,67 @@ form button{
         height: auto;
     }
     
+    /* Contact page */
+    .contactImage{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contact.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+        text-wrap: nowrap;
+    }
+    
+    .contactBox{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: start;
+        align-items: start;
+        padding: 1rem 1rem;
+    }
+    
+    .contactA{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        background-color: #E4F7F2;
+        padding: 2rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./contactBack.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    
+    .contactB{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 0.5rem;
+        border: 1px solid #003326;
+        padding: 2rem;
+    }
+    
+    .contactTitle{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+  
 }
